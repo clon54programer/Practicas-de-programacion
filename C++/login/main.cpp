@@ -17,7 +17,7 @@ bool login::Request(string a, bool maer){
     if(a.length() >= 8)
     {
         cout<<"tu contraseña cumple las caracteristicas de seguridad recomendadas \n";
-        cout<<maer;
+        cout<<maer<<"\n";
         maer = true;
     }else{
         cout<<"tu contraseña no cumple los requistos de seguridad \n";
@@ -44,12 +44,14 @@ int main(int argc, char const *argv[])
 
     //la verificacion
     cout<<myObj.config;
-    myObj.Request(myObj.password, true);
     
-        if (myObj.config == true)
+
+    bool weon = myObj.Request(myObj.password, true);
+    
+        if (weon == true)
         {
             cout<<"se alogiado correctamente \n";
-            abort;//para romper el bucle
+            break;//para romper el bucle
         }
         
     }
