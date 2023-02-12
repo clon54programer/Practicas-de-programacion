@@ -1,4 +1,4 @@
-## aqui voy a documentar los errores de este programa
+## **aqui voy a documentar los errores de este programa**
 
 el error que tuve fue que la funcion Requests no me delvolvia el valor que queria hubo dos errores.
 
