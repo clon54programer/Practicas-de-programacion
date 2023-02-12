@@ -11,24 +11,25 @@ class login{
 };
 
 void login::Request(){
-    login respuest;
-
-    if (respuest.password.length() >= 8)
+    login reque;
+    if(reque.password.length() >= 8)
     {
         cout<<"tu contraseña cumple las caracteristicas de seguridad recomendadas \n";
-        respuest.config = true;
+        config = true;
     }else{
-        cout<<"tu contraseña no cumple los requistos de seguridad";
-        respuest.config = false;
+        cout<<"tu contraseña no cumple los requistos de seguridad \n";
+        config = false;
     }
-    
-
 }
 
 int main(int argc, char const *argv[])
 {
     login myObj;
     //como hacer un logn en c++
+    bool master = true;
+
+    while (master)
+    {
     cout<<"deme su usuario y contraseña \n";
     cout<<"deme primero su usuario"<<"\n";
     cin>>myObj.Username;
@@ -37,6 +38,15 @@ int main(int argc, char const *argv[])
     cin>>myObj.password;
 
     //la verificacion
-
+    cout<<myObj.config;
+    myObj.Request();
+    
+        if (myObj.config == true)
+        {
+            cout<<"se alogiado correctamente \n";
+            abort;//para romper el bucle
+        }
+        
+    }
     return 0;
 }
