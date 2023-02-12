@@ -7,19 +7,24 @@ class login{
     string Username;
     string password;
     bool config;
-     void Request();//aqui llama la funcion
+
+    bool Request(string a,  bool maer);//aqui llama la funcion
 };
 
-void login::Request(){
+bool login::Request(string a, bool maer){
     login reque;
-    if(reque.password.length() >= 8)
+    
+    if(a.length() >= 8)
     {
         cout<<"tu contraseña cumple las caracteristicas de seguridad recomendadas \n";
-        config = true;
+        cout<<maer;
+        maer = true;
     }else{
         cout<<"tu contraseña no cumple los requistos de seguridad \n";
-        config = false;
+        maer = false;
     }
+
+    return maer;
 }
 
 int main(int argc, char const *argv[])
@@ -39,7 +44,7 @@ int main(int argc, char const *argv[])
 
     //la verificacion
     cout<<myObj.config;
-    myObj.Request();
+    myObj.Request(myObj.password, true);
     
         if (myObj.config == true)
         {
