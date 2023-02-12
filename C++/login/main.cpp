@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
     cout<<myObj.config;
     
 
-    bool weon = myObj.Request(myObj.password, true);
+    bool weon = myObj.Request(myObj.password, true);//esta varible la cree para que guardara el valor de retorno del metodo
     
         if (weon == true)
         {
