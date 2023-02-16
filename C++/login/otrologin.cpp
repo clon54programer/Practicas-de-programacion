@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
     cin>>myObj.password;
 
     //verificacion de contraseña
-    verificacion = myObj.Verificacion(myObj.password, false);
+    verificacion = myObj.Verificacion(myObj.password, true);
 
             if (verificacion == false)
             {
