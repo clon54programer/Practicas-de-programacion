@@ -10,3 +10,13 @@ def suma(a):
 
 
 print(suma(numero))
+
+#leer archivo en python
+
+fichero = open('./login.py', 'r')
+
+print(f"este abre un ficereo en python {fichero}")
+caracter = fichero.readlines()
+
+print(f"aqui impriem el contenido del archivo {caracter}")
+print(fichero.read)
