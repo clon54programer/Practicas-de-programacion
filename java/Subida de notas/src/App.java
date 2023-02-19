@@ -30,7 +30,7 @@ public class App {
         //varibles de interacion
 
         int arrayCurrentIndex;
-        int arrayCurrentIndex2;//esta haci para ver el numero de espacios posibles
+        double arrayCurrentIndex2;//esta haci para ver el numero de espacios posibles
 
         System.out.println("bienvenido profesosr");
 
@@ -46,8 +46,11 @@ public class App {
                 }
                 System.out.println("cual es el estudiante que quiere cambiar la nota\n coloque el numero que ocupa");
 
-                
-
+                arrayCurrentIndex = input.nextInt();
+                System.out.println("estudiante "+myObj.estudiantes[arrayCurrentIndex]);
+                System.out.println("coloque la nota nueva");
+                arrayCurrentIndex2 = input.nextDouble();
+                myObj.notas[arrayCurrentIndex] = arrayCurrentIndex2;
 
             } else {
                 for(int i = 0;i<=myObj.estudiantes.length;i++){
