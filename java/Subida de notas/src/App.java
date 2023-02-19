@@ -41,16 +41,19 @@ public class App {
             
             if (ruta == 1) {
                 System.out.println("este el numero del los estudinates");
-                for(int a = 0; a <=myObj.notas.length;a++){
+                for(int a = 0; a <=9;a++){
                     System.out.println("estudiante "+myObj.estudiantes[a]+"\t el numero que ocupa es el "+a);
+                    continue;
                 }
                 System.out.println("cual es el estudiante que quiere cambiar la nota\n coloque el numero que ocupa");
 
-                arrayCurrentIndex = input.nextInt();
+                arrayCurrentIndex = input.nextInt();//esta variable es la que elgi los estudiantes
                 System.out.println("estudiante "+myObj.estudiantes[arrayCurrentIndex]);
                 System.out.println("coloque la nota nueva");
                 arrayCurrentIndex2 = input.nextDouble();
                 myObj.notas[arrayCurrentIndex] = arrayCurrentIndex2;
+
+                System.out.println(myObj.estudiantes[arrayCurrentIndex]+" su nueva nota es de "+myObj.notas[arrayCurrentIndex]);
 
             } else {
                 for(int i = 0;i<=myObj.estudiantes.length;i++){
