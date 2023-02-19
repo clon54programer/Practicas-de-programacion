@@ -1,4 +1,4 @@
 public class Datos {
-    String estudiantes[] = new String[40];
-    double notas[] = new double[40];
+    String estudiantes[] = new String[10];
+    double notas[] = new double[10];
 }
