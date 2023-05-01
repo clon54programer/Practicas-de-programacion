@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -17,6 +18,9 @@ login::login(string name, string Userpassword)
 {
     UserName = name;
     password = Userpassword;
+
+    ofstream Datos("private.txt");
+    Datos << "nombre del usuario es" << name << "\n contraseña del usuario es " << Userpassword;
 }
 bool login::Verificacion(string a, bool b)
 {
@@ -36,6 +40,8 @@ bool login::Verificacion(string a, bool b)
 int main(int argc, char const *argv[])
 {
 
+    //
+    setlocale(LC_ALL, "es-ES.UTF-8");
     bool verificacion;
     bool entrada = true;
 
@@ -62,9 +68,13 @@ int main(int argc, char const *argv[])
         }
         else
         {
+            ofstream mydata("data.txt"); // aqui creamos el archivo de informacion
+
+            mydata << "nombre del usuario es " << name << "\n contraseña del usuario es " << password; // agregamos informacion el archivo creado
+            mydata.close();                                                                            // cerramso el archivo
             break;
         }
     }
-    cout << "enhorabuena ya iniciaste seccion \n";
+    cout << "enhorabuena ya te registraste \n";
     return 0;
 }
