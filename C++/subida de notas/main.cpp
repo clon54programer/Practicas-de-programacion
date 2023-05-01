@@ -3,6 +3,10 @@
 
 using namespace std;
 
+// listas de estudianetes
+enum students
+{
+};
 class Login
 {
 private:
