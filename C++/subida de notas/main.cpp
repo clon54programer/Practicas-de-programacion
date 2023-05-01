@@ -6,6 +6,16 @@ using namespace std;
 // listas de estudianetes
 enum students
 {
+    Guillermo,
+    juan,
+    david,
+    juanjo,
+    agustin,
+    maria,
+    gilma,
+    weon,
+    diego,
+    dayana,
 };
 class Login
 {
