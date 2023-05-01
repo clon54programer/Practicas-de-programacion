@@ -25,28 +25,28 @@ int main(int argc, char const *argv[])
     string interacion; // conversion de bool a string
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
 
-    // execion
+    // verificacion para que el usuario no la cague
     try
     {
         cin >> interacion;
-        if (interacion == "acepto")
+        if (interacion == "acepto") // if para verificar que el usuario coloco  lo que deseamon en este caso acepto
         {
             accept = true;
         }
         else
         {
-            throw(interacion);
+            throw(interacion); // manda error
             accept = false;
         }
     }
-    catch (string correct)
+    catch (string correct) // esta parte del codigo le dice al usuario cual fue el error que cometio.
     {
-        cout << "Error Grave, escrebio mal acepto por favor escribalo con minusculas\n";
+        cout << "Error Grave, escribiuo mal acepto\n por favor escribalo con minusculas toda la palabra\n";
     }
 
     while (accept)
     {
-        /* code */
+        cout << "entre";
     }
 
     return 0;
