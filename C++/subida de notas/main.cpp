@@ -48,6 +48,7 @@ int main(int argc, char const *argv[])
 
     /*en el bucle siguiente habra dos rutas una para actualizar notas y otro para ver notas */
     string rutas; // varible de las rutas
+    int elcionDeRuta;
 
     while (accept)
     {
@@ -59,10 +60,12 @@ int main(int argc, char const *argv[])
             if (rutas == "actu")
             {
                 cout << "seleciono actualizar notas" << endl;
+                elcionDeRuta = 1;
             }
             else if (rutas == "watch")
             {
                 cout << "seleciono ver notas" << endl;
+                elcionDeRuta = 2;
             }
             else
             {
@@ -72,6 +75,14 @@ int main(int argc, char const *argv[])
         catch (string correct)
         {
             cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas";
+        }
+        if (elcionDeRuta == 1)
+        {
+            /* code */
+        }
+        else if (elcionDeRuta == 2)
+        {
+            /* code */
         }
     }
 
