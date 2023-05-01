@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
     {
         cout << "usted que va a hacer va actualizar una nota o va ver notas" << endl;
         cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
-        try
+        try // manejo de eroroes
         {
             cin >> rutas;
             if (rutas == "actu")
@@ -90,13 +90,26 @@ int main(int argc, char const *argv[])
         {
             cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas";
         }
+
+        //______________________________________________________________________________________________________________
+        // comienza las rutas
         if (elcionDeRuta == 1)
         {
-            /* code */
+            for (int i = 0; i <= 9; i++)
+            {
+                cout << "listo";
+                system("pause");
+                break;
+            }
         }
         else if (elcionDeRuta == 2)
         {
-            /* code */
+            for (int i = 0; i <= 9; i++)
+            {
+                cout << "listo";
+                system("pause");
+                break;
+            }
         }
     }
 
