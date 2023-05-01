@@ -24,15 +24,24 @@ int main(int argc, char const *argv[])
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
-    cin >> interacion;
 
-    if (interacion == "acepto")
+    // execion
+    try
     {
-        accept = true;
+        cin >> interacion;
+        if (interacion == "acepto")
+        {
+            accept = true;
+        }
+        else
+        {
+            throw(interacion);
+            accept = false;
+        }
     }
-    else
+    catch (string correct)
     {
-        accept = false;
+        cout << "Error Grave, escrebio mal acepto por favor escribalo con minusculas\n";
     }
 
     while (accept)
