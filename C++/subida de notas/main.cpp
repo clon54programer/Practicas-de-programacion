@@ -35,6 +35,7 @@ Login::Login(string Username, string UserPassword)
 
 int main(int argc, char const *argv[])
 {
+    students;
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
@@ -98,18 +99,18 @@ int main(int argc, char const *argv[])
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= 9; i++)
             {
-
-                system("pause");
+                students;
             }
+            system("pause");
         }
         else if (elcionDeRuta == 2)
         {
             cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= 9; i++)
             {
-
-                system("pause");
+                students;
             }
+            system("pause");
         }
     }
 
