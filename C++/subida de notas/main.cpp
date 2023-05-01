@@ -95,20 +95,20 @@ int main(int argc, char const *argv[])
         // comienza las rutas
         if (elcionDeRuta == 1)
         {
+            cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= 9; i++)
             {
-                cout << "listo";
+
                 system("pause");
-                break;
             }
         }
         else if (elcionDeRuta == 2)
         {
+            cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= 9; i++)
             {
-                cout << "listo";
+
                 system("pause");
-                break;
             }
         }
     }
