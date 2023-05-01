@@ -20,7 +20,7 @@ login::login(string name, string Userpassword)
     password = Userpassword;
 
     ofstream Datos("private.txt");
-    Datos << "nombre del usuario es" << name << "\n contraseña del usuario es " << Userpassword;
+    Datos << "nombre del usuario es " << name << "\n contraseña del usuario es " << Userpassword;
 }
 bool login::Verificacion(string a, bool b)
 {
@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
 {
 
     //
-    setlocale(LC_ALL, "es-ES.UTF-8");
+    setlocale(LC_ALL, "es_ES.UTF-8");
     bool verificacion;
     bool entrada = true;
 

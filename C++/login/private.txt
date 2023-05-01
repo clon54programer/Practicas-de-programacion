@@ -1,2 +1,2 @@
-nombre del usuario esjuan
+nombre del usuario es juan
  contraseña del usuario es 12345678
