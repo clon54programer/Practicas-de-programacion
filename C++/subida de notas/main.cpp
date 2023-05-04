@@ -17,6 +17,17 @@ string students[]{
     "dayana",
 };
 int Moven = students->length() - 1; // variable para evitar excepciones
+double stunentsNotas[]{             // notas de los estudiantes
+                       1.0,
+                       3.0,
+                       3.7,
+                       4.0,
+                       2.5,
+                       1.0,
+                       0.0,
+                       0.0,
+                       0.0,
+                       0.0};
 
 class Login
 {
