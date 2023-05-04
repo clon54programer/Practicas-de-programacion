@@ -28,6 +28,8 @@ double stunentsNotas[]{             // notas de los estudiantes
                        0.0,
                        0.0,
                        0.0};
+// informacion
+// ofstream notas("notas.txt");
 
 class Login
 {
