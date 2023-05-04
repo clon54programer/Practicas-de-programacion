@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
                 cout << "seleciono actualizar notas" << endl;
                 elcionDeRuta = 1;
             }
-            else if (rutas == "watch")
+            else if (rutas == "wacth")
             {
                 cout << "seleciono ver notas" << endl;
                 elcionDeRuta = 2;
@@ -90,8 +90,9 @@ int main(int argc, char const *argv[])
         }
         catch (string correct)
         {
-            system("cls"); // esto es para dar ordenes al sistema operativo y limpiar la consola.
+            // esto es para dar ordenes al sistema operativo y limpiar la consola.
             cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas" << endl;
+            system("cls");
         }
 
         //______________________________________________________________________________________________________________
@@ -101,16 +102,16 @@ int main(int argc, char const *argv[])
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= Moven; i++)
             {
-                cout << students[i] << endl;
+                cout << "#" << i + 1 << "\t" << students[i] << endl;
             }
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
-        else if (elcionDeRuta == 2)
+        else if (elcionDeRuta == 2) // esta es la ruta para ver las notas
         {
             cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= Moven; i++)
             {
-                cout << students[i] << endl; // este metodo es para darle tiempo al usuario para analizar la informacion
+                cout << "#" << i + 1 << "\t" << students[i] << endl; // este metodo es para darle tiempo al usuario para analizar la informacion
             }
             system("pause");
         }
