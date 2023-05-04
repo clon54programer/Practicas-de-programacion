@@ -90,26 +90,27 @@ int main(int argc, char const *argv[])
         }
         catch (string correct)
         {
-            cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas";
+            system("cls"); // esto es para dar ordenes al sistema operativo y limpiar la consola.
+            cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas" << endl;
         }
 
         //______________________________________________________________________________________________________________
         // comienza las rutas
-        if (elcionDeRuta == 1)
+        if (elcionDeRuta == 1) // esta es la ruta para actualizar los resulatados
         {
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= Moven; i++)
             {
                 cout << students[i] << endl;
             }
-            system("pause");
+            system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
         else if (elcionDeRuta == 2)
         {
             cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= Moven; i++)
             {
-                cout << students[i] << endl;
+                cout << students[i] << endl; // este metodo es para darle tiempo al usuario para analizar la informacion
             }
             system("pause");
         }
