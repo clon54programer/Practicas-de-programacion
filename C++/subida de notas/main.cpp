@@ -113,7 +113,7 @@ int main(int argc, char const *argv[])
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= Moven; i++)
             {
-                cout << "#" << i + 1 << "\t" << students[i] << endl;
+                cout << "#" << i + 1 << "\t" << students[i] << " \t nota " << stunentsNotas[i] << endl;
             }
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
@@ -122,9 +122,9 @@ int main(int argc, char const *argv[])
             cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= Moven; i++)
             {
-                cout << "#" << i + 1 << "\t" << students[i] << endl; // este metodo es para darle tiempo al usuario para analizar la informacion
+                cout << "#" << i + 1 << "\t" << students[i] << " \t nota " << stunentsNotas[i] << endl;
             }
-            system("pause");
+            system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
     }
 
