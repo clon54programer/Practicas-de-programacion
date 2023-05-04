@@ -16,6 +16,8 @@ string students[]{
     "diego",
     "dayana",
 };
+int Moven = students->length() - 1; // variable para evitar excepciones
+
 class Login
 {
 private:
@@ -96,18 +98,18 @@ int main(int argc, char const *argv[])
         if (elcionDeRuta == 1)
         {
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
-            for (int i = 0; i <= 9; i++)
+            for (int i = 0; i <= Moven; i++)
             {
-                students;
+                cout << students[i] << endl;
             }
             system("pause");
         }
         else if (elcionDeRuta == 2)
         {
             cout << "lista de estudiantes" << endl;
-            for (int i = 0; i <= 9; i++)
+            for (int i = 0; i <= Moven; i++)
             {
-                students;
+                cout << students[i] << endl;
             }
             system("pause");
         }
