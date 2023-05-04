@@ -2,11 +2,12 @@
 
 ## funcines encontradas
 
->system
+## system
+este metodo sirve para escribir comandos por consola.
 
-es el metodo que coloca 
->Presione una tecla para continuar . . .  
-en lo IDE
+1. pause: sirve para pausar un bucle momentaniamente.
+2. cls: este sirve para limpiar la pantalla.
+
 
 > flush
 es un nuevo endl.
