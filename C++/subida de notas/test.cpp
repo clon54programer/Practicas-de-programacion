@@ -14,8 +14,8 @@ int main(int argc, char const *argv[])
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
 
-    user.Interacion(interacion);
-    user.verificacion(x);
+    user.Interacion(interacion); // metodo que manda exciones
+    user.verificacion(x);        // metodo que regresa un true o false
 
     while (x)
     {
