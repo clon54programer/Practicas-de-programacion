@@ -7,18 +7,18 @@ using namespace std;
 string interacion;
 bool accept;
 
-void UserControl::Interacion()
+void UserControl::Interacion(string x)
 {
     try
     {
-        if (interacion == "acepto") // if para verificar que el usuario coloco  lo que deseamon en este caso acepto
+        if (x == "acepto") // if para verificar que el usuario coloco  lo que deseamon en este caso acepto
         {
             accept = true;
             cout << "bienvenido profesor o profesora";
         }
         else
         {
-            throw(interacion); // manda error
+            throw(x); // manda error
             accept = false;
         }
     }

@@ -8,6 +8,6 @@ using namespace std;
 class UserControl
 {
 public:
-    void Interacion();
+    void Interacion(string x);
 };
 #endif
