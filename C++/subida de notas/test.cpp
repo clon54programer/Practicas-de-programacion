@@ -9,14 +9,14 @@ int main(int argc, char const *argv[])
 
     // varibales
     string interacion;
-    bool x;
+    bool y;
     bool verificacion;
 
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
 
     user.Interacion(interacion);         // metodo que manda exciones
-    verificacion = user.verificacion(x); // metodo que regresa un true o false
+    verificacion = user.verificacion(y); // metodo que regresa un true o false
 
     while (verificacion == true)
     {
