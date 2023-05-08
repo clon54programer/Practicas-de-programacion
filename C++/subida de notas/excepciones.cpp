@@ -26,3 +26,8 @@ void UserControl::Interacion(string x)
         cout << "Error Grave, escribio mal acepto\n por favor escribalo con minusculas toda la palabra y bien\n";
     }
 }
+
+void UserControl::verificacion(bool x)
+{
+    accept = x;
+}
