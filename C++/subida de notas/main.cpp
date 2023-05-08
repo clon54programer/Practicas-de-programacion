@@ -37,6 +37,9 @@ int Moven = students->length() - 1; // variable para evitar excepciones
 
 int main(int argc, char const *argv[])
 {
+    // objetos
+
+    UserControl user;
 
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
