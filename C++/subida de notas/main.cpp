@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
 
     // verificacion para que el usuario no la cague
     user.Interacion(interacion);
-    bool recividor = user.verificacion(accept);
+    bool recividor = user.verificacion(accept); // este recevidira el retorno de la funcion
 
     /*en el bucle siguiente habra dos rutas una para actualizar notas y otro para ver notas */
     string rutas; // varible de las rutas
