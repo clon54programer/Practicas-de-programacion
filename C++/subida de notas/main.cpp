@@ -43,18 +43,19 @@ int main(int argc, char const *argv[])
 
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
+
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
 
     // verificacion para que el usuario no la cague
     user.Interacion(interacion);
-    user.verificacion(accept);
+    bool recividor = user.verificacion(accept);
 
     /*en el bucle siguiente habra dos rutas una para actualizar notas y otro para ver notas */
     string rutas; // varible de las rutas
     int elcionDeRuta;
 
-    while (accept)
+    while (recividor == true)
     {
         cout << "usted que va a hacer va actualizar una nota o va ver notas" << endl;
         cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
