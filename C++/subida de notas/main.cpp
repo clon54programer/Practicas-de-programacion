@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "lib/login.h"
 
 using namespace std;
 
@@ -30,22 +31,6 @@ double stunentsNotas[]{             // notas de los estudiantes
                        0.0};
 // informacion
 // ofstream notas("notas.txt");
-
-class Login
-{
-private:
-    string name;
-    string password;
-
-public:
-    Login(string Username, string UserPassword);
-};
-
-Login::Login(string Username, string UserPassword)
-{
-    name = Username;
-    password = UserPassword;
-}
 
 int main(int argc, char const *argv[])
 {
