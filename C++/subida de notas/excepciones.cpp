@@ -5,7 +5,6 @@ using namespace std;
 
 // variables
 string interacion;
-bool accept;
 
 void UserControl::Interacion(string x)
 {

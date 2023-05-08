@@ -7,6 +7,9 @@ using namespace std;
 
 class UserControl
 {
+private:
+    bool accept;
+
 public:
     void Interacion(string x);
 };
