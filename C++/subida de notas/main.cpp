@@ -44,27 +44,11 @@ int main(int argc, char const *argv[])
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
+    cin >> interacion;
 
     // verificacion para que el usuario no la cague
-    try
-    {
-        cin >> interacion;
-
-        if (interacion == "acepto") // if para verificar que el usuario coloco  lo que deseamon en este caso acepto
-        {
-            accept = true;
-            cout << "bienvenido profesor o profesora";
-        }
-        else
-        {
-            throw(interacion); // manda error
-            accept = false;
-        }
-    }
-    catch (string correct) // esta parte del codigo le dice al usuario cual fue el error que cometio.
-    {
-        cout << "Error Grave, escribio mal acepto\n por favor escribalo con minusculas toda la palabra y bien\n";
-    }
+    user.Interacion(interacion);
+    user.verificacion(accept);
 
     /*en el bucle siguiente habra dos rutas una para actualizar notas y otro para ver notas */
     string rutas; // varible de las rutas

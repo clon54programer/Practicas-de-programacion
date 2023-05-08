@@ -27,7 +27,8 @@ void UserControl::Interacion(string x)
     }
 }
 
-void UserControl::verificacion(bool x)
+bool UserControl::verificacion(bool x)
 {
     accept = x;
+    return x;
 }

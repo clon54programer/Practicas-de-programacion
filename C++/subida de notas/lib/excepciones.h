@@ -12,6 +12,6 @@ private:
 
 public:
     void Interacion(string x);
-    void verificacion(bool x);
+    bool verificacion(bool x);
 };
 #endif
