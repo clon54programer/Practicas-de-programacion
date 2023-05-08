@@ -5,11 +5,9 @@
 
 using namespace std;
 
-class Students
+class UserControl
 {
-
 public:
-    // listas de estudianetes
+    void interacion();
 };
-
 #endif

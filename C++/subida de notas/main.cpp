@@ -3,7 +3,7 @@
 
 // librerias propias
 #include "lib/login.h"
-#include "lib/Stundents.h"
+#include "lib/excepciones.h"
 
 using namespace std;
 
