@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
     string interacion; // conversion de bool a string
 
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
-    cin >> interacion;
+    cin >> interacion; //
 
     // verificacion para que el usuario no la cague
     user.Interacion(interacion);
