@@ -1,5 +1,5 @@
-#ifndef students_h
-#define students_h
+#ifndef excepciones_h
+#define excepciones_h
 
 #include <iostream>
 
