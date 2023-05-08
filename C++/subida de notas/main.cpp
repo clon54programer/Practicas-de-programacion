@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
+
+// librerias propias
 #include "lib/login.h"
+#include "lib/Stundents.h"
 
 using namespace std;
 
-// listas de estudianetes
 string students[]{
     "Guillermo",
     "juan",
@@ -17,8 +19,7 @@ string students[]{
     "diego",
     "dayana",
 };
-int Moven = students->length() - 1; // variable para evitar excepciones
-double stunentsNotas[]{             // notas de los estudiantes
+double stunentsNotas[]{// notas de los estudiantes
                        1.0,
                        3.0,
                        3.7,
@@ -29,12 +30,14 @@ double stunentsNotas[]{             // notas de los estudiantes
                        0.0,
                        0.0,
                        0.0};
+int Moven = students->length() - 1; // variable para evitar excepciones
+
 // informacion
 // ofstream notas("notas.txt");
 
 int main(int argc, char const *argv[])
 {
-    students;
+
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
