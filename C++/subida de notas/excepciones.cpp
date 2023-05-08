@@ -29,6 +29,6 @@ void UserControl::Interacion(string x)
 
 bool UserControl::verificacion(bool x)
 {
-    accept = x;
+    accept = x; // esto es para que recoja el valor de el metodo Interacion
     return x;
 }
