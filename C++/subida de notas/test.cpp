@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 
     while (verificacion == true)
     {
-        cout << "hello word";
+        cout << "\nhello word";
         break;
     }
 
