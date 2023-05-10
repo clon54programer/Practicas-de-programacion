@@ -64,6 +64,6 @@ void UserControl::Rutas(string y)
 
 int UserControl::RutaElegida(int x)
 {
-    camino = x;
+    x = camino;
     return x;
 }
