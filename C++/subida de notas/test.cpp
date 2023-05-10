@@ -8,11 +8,11 @@ int main(int argc, char const *argv[])
     UserControl user;
 
     // varibales
-    string interacion;
-    bool y;
-    bool verificacion;
-    int ruta;
-    int rutaElegida;
+    string interacion; // varible para todo la interacion de string.
+    bool y;            // esta variable recivira el valor del metodo verificacion.
+    bool verificacion; // este inicialar el metodo Verificacion.
+    int ruta;          // este recibira el valor de el metodo RutaElegida.
+    int rutaElegida;   // activara los if.
 
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
@@ -25,13 +25,13 @@ int main(int argc, char const *argv[])
         cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
         cin >> interacion;
         user.Rutas(interacion);
-        user.RutaElegida(ruta);
+        rutaElegida = user.RutaElegida(ruta);
 
-        if (ruta == 1)
+        if (rutaElegida == 1)
         {
             cout << "actualizar notas" << endl;
         }
-        else if (ruta == 2)
+        else if (rutaElegida == 2)
         {
             cout << "ver estudianetes" << endl;
         }
