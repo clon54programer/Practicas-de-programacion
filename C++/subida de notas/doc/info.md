@@ -1,5 +1,10 @@
 ## subida de notas
 
+
+## compilar  
+> clang your.cpp -lstdc++
+> clang++ your.cpp
+> clang -x c++ your.cpp
 ### heramientas a aprender
 > aprender a usar un depurador que estoy teniendo muchos errores por no poder testear bien el programa.
 
