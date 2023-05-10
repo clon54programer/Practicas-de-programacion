@@ -41,12 +41,12 @@ void UserControl::Rutas(string y)
 
         if (y == "actu")
         {
-            cout << "seleciono actualizar notas" << endl;
+            // cout << "seleciono actualizar notas" << endl;
             camino = 1;
         }
         else if (y == "wacth")
         {
-            cout << "seleciono ver notas" << endl;
+            // cout << "seleciono ver notas" << endl;
             camino = 2;
         }
         else
