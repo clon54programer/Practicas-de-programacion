@@ -33,3 +33,31 @@ bool UserControl::verificacion(bool x)
     x = acepto; // esto es para que recoja el valor de el metodo Interacion
     return x;
 }
+
+void UserControl::Rutas(string y)
+{
+    try // manejo de eroroes
+    {
+
+        if (y == "actu")
+        {
+            cout << "seleciono actualizar notas" << endl;
+            camino = 1;
+        }
+        else if (y == "wacth")
+        {
+            cout << "seleciono ver notas" << endl;
+            camino = 2;
+        }
+        else
+        {
+            throw(y);
+        }
+    }
+    catch (string correct)
+    {
+        // esto es para dar ordenes al sistema operativo y limpiar la consola.
+        cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas" << endl;
+        system("cls");
+    }
+}
