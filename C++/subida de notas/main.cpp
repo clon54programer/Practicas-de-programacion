@@ -59,31 +59,9 @@ int main(int argc, char const *argv[])
     {
         cout << "usted que va a hacer va actualizar una nota o va ver notas" << endl;
         cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
-        try // manejo de eroroes
-        {
-            cin >> rutas;
-            if (rutas == "actu")
-            {
-                cout << "seleciono actualizar notas" << endl;
-                elcionDeRuta = 1;
-            }
-            else if (rutas == "wacth")
-            {
-                cout << "seleciono ver notas" << endl;
-                elcionDeRuta = 2;
-            }
-            else
-            {
-                throw(rutas);
-            }
-        }
-        catch (string correct)
-        {
-            // esto es para dar ordenes al sistema operativo y limpiar la consola.
-            cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas" << endl;
-            system("cls");
-        }
-
+        cin >> rutas;
+        user.Rutas(rutas);
+        user.RutaElegida(elcionDeRuta);
         //______________________________________________________________________________________________________________
         // comienza las rutas
         if (elcionDeRuta == 1) // esta es la ruta para actualizar los resulatados
