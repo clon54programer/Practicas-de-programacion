@@ -11,6 +11,7 @@ int main(int argc, char const *argv[])
     string interacion;
     bool y;
     bool verificacion;
+    int ruta = 0;
 
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
@@ -20,7 +21,20 @@ int main(int argc, char const *argv[])
 
     while (verificacion == true)
     {
-        cout << "\nhello word";
+        cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
+        cin >> interacion;
+        user.Rutas(interacion);
+        user.RutaElegida(ruta);
+
+        if (ruta == 1)
+        {
+            cout << "actualizar notas" << endl;
+        }
+        else if (ruta == 2)
+        {
+            cout << "ver estudianetes" << endl;
+        }
+
         break;
     }
 
