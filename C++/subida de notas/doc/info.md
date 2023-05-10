@@ -1,5 +1,8 @@
 ## subida de notas
 
+### heramientas a aprender
+> aprender a usar un depurador que estoy teniendo muchos errores por no poder testear bien el programa.
+
 ## funcines encontradas
 
 ## system
