@@ -52,19 +52,21 @@ int main(int argc, char const *argv[])
     bool recividor = user.verificacion(accept); // este recevidira el retorno de la funcion
 
     /*en el bucle siguiente habra dos rutas una para actualizar notas y otro para ver notas */
-    string rutas; // varible de las rutas
-    int elcionDeRuta;
+    int rutas;        // varible de las rutas
+    int elcionDeRuta; // recibira el valor de las rutas
 
     while (recividor == true)
     {
         cout << "usted que va a hacer va actualizar una nota o va ver notas" << endl;
         cout << "si va a actualizar notas coloque actu o si va a ver notas coloque wacth" << endl;
-        cin >> rutas;
-        user.Rutas(rutas);
-        user.RutaElegida(elcionDeRuta);
+        cin >> interacion;
+        // metodos
+        //______________________________________________________________________________________________________
+        user.Rutas(interacion);
+        rutas = user.RutaElegida(elcionDeRuta);
         //______________________________________________________________________________________________________________
         // comienza las rutas
-        if (elcionDeRuta == 1) // esta es la ruta para actualizar los resulatados
+        if (rutas == 1) // esta es la ruta para actualizar los resulatados
         {
             cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
             for (int i = 0; i <= Moven; i++)
@@ -73,7 +75,7 @@ int main(int argc, char const *argv[])
             }
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
-        else if (elcionDeRuta == 2) // esta es la ruta para ver las notas
+        else if (rutas == 2) // esta es la ruta para ver las notas
         {
             cout << "lista de estudiantes" << endl;
             for (int i = 0; i <= Moven; i++)
