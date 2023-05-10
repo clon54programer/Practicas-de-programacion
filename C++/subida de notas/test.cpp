@@ -11,7 +11,8 @@ int main(int argc, char const *argv[])
     string interacion;
     bool y;
     bool verificacion;
-    int ruta = 0;
+    int ruta;
+    int rutaElegida;
 
     cout << "bienvenido usuario se debe resgistrar, escriba acepto\n";
     cin >> interacion;
