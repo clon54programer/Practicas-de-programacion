@@ -14,7 +14,7 @@ void UserControl::Interacion(string x)
         if (x == "acepto") // if para verificar que el usuario coloco  lo que deseamon en este caso acepto
         {
             acepto = true;
-            cout << "bienvenido profesor o profesora";
+            cout << "bienvenido profesor o profesora\n";
         }
         else
         {
@@ -60,4 +60,10 @@ void UserControl::Rutas(string y)
         cout << "ERROR GRAVE, no escribio bien wacth o actu\n por favor escribalos bien y en minusculas" << endl;
         system("cls");
     }
+}
+
+int UserControl::RutaElegida(int x)
+{
+    camino = x;
+    return x;
 }

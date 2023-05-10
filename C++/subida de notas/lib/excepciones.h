@@ -21,5 +21,6 @@ public:
     |2. es para ver solo las notas de los estudiantes.
     */
     void Rutas(string y); // aqui hay una excepcion para ver que el usuario lo escribio bien.
+    int RutaElegida(int x);
 };
 #endif
