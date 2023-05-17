@@ -1,7 +1,20 @@
 #include <iostream>
+#include <fstream>
 #include "lib/excepciones.h"
 
 using namespace std;
+
+string myText;
+
+void printData()
+{
+    ifstream myData("stundets.txt");
+
+    while (getline(myData, myText))
+    {
+        cout << myText << endl;
+    }
+}
 
 int main(int argc, char const *argv[])
 {
@@ -30,6 +43,7 @@ int main(int argc, char const *argv[])
         if (rutaElegida == 1)
         {
             cout << "actualizar notas" << endl;
+            printData();
         }
         else if (rutaElegida == 2)
         {

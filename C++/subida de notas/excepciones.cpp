@@ -7,6 +7,7 @@ using namespace std;
 string interacion;
 bool acepto;
 
+// esta funcion es la primera funcion
 void UserControl::Interacion(string x)
 {
     try
