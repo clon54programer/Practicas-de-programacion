@@ -1,23 +1,23 @@
 public class login {
     String UserName;// el nombre de l usuario
-    String password;// la contraseña
+    String Password;// la contraseña
     boolean confi;
 
     // contructor
     public login(String Name, String passwpString) {
         UserName = Name;
-        password = passwpString;
+        Password = passwpString;
     }
 
     public void PrintData() {
-        System.out.println("name:" + UserName + " password:" + password);
+        System.out.println("name:" + UserName + " password:" + Password);
     }
 
     /**
      * @param password es la contraseña
      */
     public void PasswordSecurity() {
-        if (password.length() >= 8) {
+        if (Password.length() >= 8) {
             System.out.println("su contraseña cumple los requisitos del seguridad");
             confi = true;
         } else {

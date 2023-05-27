@@ -6,17 +6,17 @@ public class App {
         Scanner Input = new Scanner(System.in);
         // varibles
         String name;// recibira el nombre del usuario
-        String Contraseña;// recibira la contraseña de el usuario
+        String Contrasena;// recibira la contraseña de el usuario
 
         System.out.println("bienvenido usuario\n por favor ingrese usario y contraseña");
         System.out.println("ingrese su nombre de usuario");
         name = Input.nextLine();
         System.out.println("ingrese su contraseña");
-        Contraseña = Input.nextLine();
+        Contrasena = Input.nextLine();
 
         // constantes
-        final String UserName = name;
-        final String password = Contraseña;
+        String UserName = name;
+        String password = Contrasena;
 
         login User = new login(UserName, password);
 
