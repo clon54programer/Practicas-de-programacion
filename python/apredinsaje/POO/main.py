@@ -11,6 +11,7 @@ class Myclass:
     x = 5
 
 
+# creando objeto
 myObj = Myclass()
 
 print(myObj.nombre, myObj.x, "juan", "jjuan")
