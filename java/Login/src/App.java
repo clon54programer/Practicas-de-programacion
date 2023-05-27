@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//import javax.swing.JOptionPane;
+
 public class App {
 
     public static class Login {
@@ -65,10 +67,34 @@ public class App {
         myObj.PasswordSecurity();
 
         boolean inicialodor_del_bucle = myObj.confi;// recibira el valor de confi
+        String userNameString;// esta variable sera del nombre
+        String userPasswordString2;// esta varible sera de la contraseña
 
         while (inicialodor_del_bucle) {
             System.out.println("EnHorabuena sea logiando correctamente");
-            break;
+            for (int i = 0; i <= 3; i++) {
+                // String texto = JOptionPane.showInputDialog("escriba su usuario");
+                // userPasswordString2 = JOptionPane.showInputDialog("escriba su contraseña");
+
+                System.out.println("ingrese su nombre de usuario");
+                userNameString = Input.nextLine();
+                System.out.println("ingrese su contraseña");
+                userPasswordString2 = Input.nextLine();
+
+                // if para comprabar que los datos singresado sean iguales a la de la clase
+                if (userNameString.equals(userName))
+                    if (userPasswordString2.equals(password)) {
+                        System.out.println("bueno a iniciando secion");
+                    } else {
+                        System.out.println("su usaurio o contarseña no coinciden con los de bases de datos");
+                    }
+
+                if (i == 3) {
+                    System.out.println("usantes tus 3 intentos ");
+                    System.exit(-1);
+                }
+
+            }
         }
 
         if (inicialodor_del_bucle == false) {
