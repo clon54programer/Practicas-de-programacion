@@ -15,5 +15,10 @@ public class App {
         Contraseña = Input.nextLine();
 
         // constantes
+        final String UserName = name;
+        final String password = Contraseña;
+
+        login User = new login(UserName, password);
+
     }
 }

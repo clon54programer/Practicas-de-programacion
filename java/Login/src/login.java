@@ -3,6 +3,12 @@ public class login {
     String password;// la contraseña
     boolean confi;
 
+    // contructor
+    public login(String Name, String passwpString) {
+        UserName = Name;
+        password = passwpString;
+    }
+
     /**
      * @param password es la contraseña
      */
