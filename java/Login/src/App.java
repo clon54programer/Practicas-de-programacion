@@ -20,5 +20,7 @@ public class App {
 
         login User = new login(UserName, password);
 
+        User.PrintData();
+
     }
 }

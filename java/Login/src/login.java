@@ -9,6 +9,10 @@ public class login {
         password = passwpString;
     }
 
+    public void PrintData() {
+        System.out.println("name:" + UserName + " password:" + password);
+    }
+
     /**
      * @param password es la contraseña
      */
