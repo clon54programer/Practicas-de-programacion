@@ -1,13 +1,15 @@
 import java.util.Scanner;
+import java.util.concurrent.TransferQueue;
 
 //import javax.swing.JOptionPane;
 
 public class App {
 
     public static class Login {
-        String UserName;// el nombre de l usuario
-        String Password;// la contraseña
+        private String UserName;// el nombre de l usuario
+        private String Password;// la contraseña
         boolean confi;
+        boolean Inicio_De_Sesion;// este sera el que detendra el bucle
 
         // contructor
         public void Datos(String Name, String passwpString) {
@@ -34,6 +36,23 @@ public class App {
                 confi = false;
 
             }
+        }
+
+        /**
+         * esta funcion es para dar el inicio de secion al usarioa
+         * 
+         * @param name
+         * @param password
+         */
+        public void Inicio_De_Sesion(String name, String password) {
+            if (name.equals(UserName))
+                if (password.equals(Password)) {
+                    System.out.println("bueno a iniciando secion");
+                    Inicio_De_Sesion = true;
+                } else {
+                    System.out.println("su usaurio o contarseña no coinciden con los de bases de datos");
+                    Inicio_De_Sesion = false;
+                }
         }
 
     }
@@ -81,14 +100,11 @@ public class App {
                 System.out.println("ingrese su contraseña");
                 userPasswordString2 = Input.nextLine();
 
-                // if para comprabar que los datos singresado sean iguales a la de la clase
-                if (userNameString.equals(userName))
-                    if (userPasswordString2.equals(password)) {
-                        System.out.println("bueno a iniciando secion");
-                        break;
-                    } else {
-                        System.out.println("su usaurio o contarseña no coinciden con los de bases de datos");
-                    }
+                myObj.Inicio_De_Sesion(userNameString, userPasswordString2);
+
+                if (myObj.Inicio_De_Sesion == true) {
+                    System.exit(0);
+                }
 
                 if (i == 3) {
                     System.out.println("usantes tus 3 intentos ");
@@ -103,4 +119,17 @@ public class App {
         }
 
     }
+
 }
+
+/**
+ * // if para comprabar que los datos singresado sean iguales a la de la clase
+ * if (userNameString.equals(userName))
+ * if (userPasswordString2.equals(password)) {
+ * System.out.println("bueno a iniciando secion");
+ * break;
+ * } else {
+ * System.out.println("su usaurio o contarseña no coinciden con los de bases de
+ * datos");
+ * }
+ */
