@@ -15,12 +15,14 @@ public class App {
         Contrasena = Input.nextLine();
 
         // constantes
-        String UserName = name;
+        String userName = name;
         String password = Contrasena;
 
-        login User = new login(UserName, password);
+        login myObj = new login();
 
-        User.PrintData();
+        myObj.Login(userName, password);
+
+        myObj.PrintData();
 
     }
 }

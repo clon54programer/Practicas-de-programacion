@@ -4,7 +4,7 @@ public class login {
     boolean confi;
 
     // contructor
-    public login(String Name, String passwpString) {
+    public void Login(String Name, String passwpString) {
         UserName = Name;
         Password = passwpString;
     }
