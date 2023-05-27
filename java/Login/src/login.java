@@ -1,16 +1,11 @@
 public class login {
-    String UserName;
-    String password;
+    String UserName;// el nombre de l usuario
+    String password;// la contraseña
     boolean confi;
 
-    public void ShowUsername() {
-        System.out.println(UserName);
-    }
-
-    public void Showpassword() {
-        System.out.println(password);
-    }
-
+    /**
+     * @param password es la contraseña
+     */
     public void PasswordSecurity() {
         if (password.length() >= 8) {
             System.out.println("su contraseña cumple los requisitos del seguridad");
