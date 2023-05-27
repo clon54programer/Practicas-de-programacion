@@ -67,8 +67,12 @@ public class App {
         boolean inicialodor_del_bucle = myObj.confi;// recibira el valor de confi
 
         while (inicialodor_del_bucle) {
-            System.out.println("init");
+            System.out.println("EnHorabuena sea logiando correctamente");
             break;
+        }
+
+        if (inicialodor_del_bucle == false) {
+            System.out.println("hubo un error es el logueo siga por favor las excepciones");
         }
 
     }
