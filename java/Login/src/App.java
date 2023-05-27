@@ -85,6 +85,7 @@ public class App {
                 if (userNameString.equals(userName))
                     if (userPasswordString2.equals(password)) {
                         System.out.println("bueno a iniciando secion");
+                        break;
                     } else {
                         System.out.println("su usaurio o contarseña no coinciden con los de bases de datos");
                     }
