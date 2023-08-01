@@ -2,17 +2,17 @@ package clases;
 
 public class ControlUser {
 
-    final private String ver = "ver";
-    final private String actualizar = "actualizar";
+    final public String ver = "ver";
+    final public String actualizar = "actualizar";
 
-    public boolean iniciar;
+    public boolean iniciar = true;
 
     /**
      * este metodo verifica que el usuario alla escrito bien las rutas
      * 
      * @param elecion esta variable es la que recibe la funcion
      */
-    void Accion_del_Usuario(String elecion) {
+    public void Accion_del_Usuario(String elecion) {
 
         elecion.toLowerCase();
         if (elecion != ver || elecion != actualizar) {
@@ -21,6 +21,6 @@ public class ControlUser {
         } else {
             iniciar = true;
         }
-
     }
+
 }

@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
+import Datos.Datos;
 import clases.ControlUser;
 
 public class App {
     public static void main(String[] args) throws Exception {
         // objetsos
-        Datos myObj = new Datos();
+
         Scanner input = new Scanner(System.in);
         // objetos de clases
         ControlUser User = new ControlUser();
+        Datos myObj = new Datos();
+
         // estudiantes
         myObj.estudiantes[0] = "Guillermo";
         myObj.estudiantes[1] = "juan";
@@ -38,5 +41,23 @@ public class App {
         System.out.println(
                 "bienvenido profesor\n si quiere ver las notas escriba ver o si quiere actualizar las notas de sus estudiantes escriba actualizar");
 
+        while (true) {
+            accion_del_Usuario = input.nextLine();
+
+            User.Accion_del_Usuario(accion_del_Usuario);
+
+            // rutas
+
+            int moven = myObj.estudiantes.length - 1;
+
+            if (accion_del_Usuario.equals(User.ver)) {
+                for (int i = 0; i <= moven; i++) {
+
+                }
+            } else if (accion_del_Usuario.equals(User.actualizar)) {
+
+            }
+        }
     }
+
 }
