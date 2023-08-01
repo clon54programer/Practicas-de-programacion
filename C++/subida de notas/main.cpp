@@ -32,6 +32,20 @@ double stunentsNotas[]{// notas de los estudiantes
                        0.0};
 int Moven = students->length() - 1; // variable para evitar excepciones
 
+void verNotas()
+{
+    cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
+    for (int i = 0; i <= Moven; i++)
+    {
+        cout << "#" << i + 1 << "\t" << students[i] << " \t nota " << stunentsNotas[i] << endl;
+    }
+}
+
+void actualizarNota(int posicion, double nota)
+{
+    stunentsNotas[posicion] = notas;
+}
+
 // informacion
 // ofstream notas("notas.txt");
 
@@ -40,6 +54,7 @@ int main(int argc, char const *argv[])
     // objetos
 
     UserControl user;
+    Base_de_Datos Control;
 
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
