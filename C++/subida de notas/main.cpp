@@ -68,11 +68,7 @@ int main(int argc, char const *argv[])
         // comienza las rutas
         if (rutas == 1) // esta es la ruta para actualizar los resulatados
         {
-            cout << "lista de estudiantes" << endl; // nueva forma de saltar de linea
-            for (int i = 0; i <= Moven; i++)
-            {
-                cout << "#" << i + 1 << "\t" << students[i] << " \t nota " << stunentsNotas[i] << endl;
-            }
+
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
         else if (rutas == 2) // esta es la ruta para ver las notas
