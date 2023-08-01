@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
+import clases.ControlUser;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // objetsos
         Datos myObj = new Datos();
         Scanner input = new Scanner(System.in);
         // objetos de clases
-
+        ControlUser User = new ControlUser();
         // estudiantes
         myObj.estudiantes[0] = "Guillermo";
         myObj.estudiantes[1] = "juan";
