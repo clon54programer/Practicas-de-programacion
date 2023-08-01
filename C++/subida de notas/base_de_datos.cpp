@@ -3,8 +3,9 @@
 
 using namespace std;
 
-void Base_de_Datos::actualizar(int posicion, string students[], int lista_de_notas[])
+void Base_de_Datos::actualizar(int posicion, int notas)
 {
+    lista_de_notas[posicion] = notas;
     ver();
 }
 

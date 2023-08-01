@@ -12,7 +12,7 @@ private:
     int lista_de_notas[];
 
 public:
-    void actualizar(int posicion, string students[], int lista_de_notas[]);
+    void actualizar(int posicion, int notas);
     void ver();
 };
 
