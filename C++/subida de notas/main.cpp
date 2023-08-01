@@ -43,7 +43,8 @@ void verNotas()
 
 void actualizarNota(int posicion, double nota)
 {
-    stunentsNotas[posicion] = nota;
+    int moven = posicion - 1;
+    stunentsNotas[moven] = nota;
 }
 
 // informacion
