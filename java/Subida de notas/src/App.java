@@ -31,8 +31,10 @@ public class App {
         myObj.notas[9] = 0;
 
         // varibles de interacion
+        String accion_del_Usuario;// esta variable guardara la acciones del usuario
 
-        System.out.println("bienvenido profesosr");
+        System.out.println(
+                "bienvenido profesor\n si quiere ver las notas escriba ver o si quiere actualizar las notas de sus estudiantes escriba actualizar");
 
     }
 }
