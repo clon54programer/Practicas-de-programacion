@@ -43,7 +43,7 @@ void verNotas()
 
 void actualizarNota(int posicion, double nota)
 {
-    stunentsNotas[posicion] = notas;
+    stunentsNotas[posicion] = nota;
 }
 
 // informacion
@@ -54,7 +54,6 @@ int main(int argc, char const *argv[])
     // objetos
 
     UserControl user;
-    Base_de_Datos Control;
 
     bool accept;       // iniciador del while
     string interacion; // conversion de bool a string
@@ -83,16 +82,23 @@ int main(int argc, char const *argv[])
         // comienza las rutas
         if (rutas == 1) // esta es la ruta para actualizar los resulatados
         {
+            int posicion;
+            double nuevanota = 0;
 
+            verNotas();
+            system("pause");
+
+            cout << "ingrese el numero del estudiante";
+            cin >> posicion;
+            cout << "ingrese la nueva nota" << endl;
+            cin >> nuevanota;
+
+            actualizarNota(posicion, nuevanota);
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
         else if (rutas == 2) // esta es la ruta para ver las notas
         {
-            cout << "lista de estudiantes" << endl;
-            for (int i = 0; i <= Moven; i++)
-            {
-                cout << "#" << i + 1 << "\t" << students[i] << " \t nota " << stunentsNotas[i] << endl;
-            }
+            verNotas();
             system("pause"); // este metodo es para darle tiempo al usuario para analizar la informacion
         }
     }
