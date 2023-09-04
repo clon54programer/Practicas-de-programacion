@@ -9,7 +9,13 @@ namespace Program
     {
         static void Main()
         {
-            Hashtable studentsTable = new Hashtable();
+            Hashtable studentsTable = new Hashtable(); // las hash Table
+
+            Grado_11 Student1 = new Grado_11(1, "Guillermo");
+            Grado_11 Student2 = new Grado_11(2, "juan");
+            Grado_11 Student3 = new Grado_11(3, "david");
+            Grado_11 Student4 = new Grado_11(4, "juanjo");
+            Grado_11 Student5 = new Grado_11(5, "agustin");
 
             Console.WriteLine("hello world");
         }
