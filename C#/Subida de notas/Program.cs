@@ -7,6 +7,10 @@ namespace Program
 
     class SubidaDeNotas
     {
+        void Opciones(int opcion)
+        {
+
+        }
         static void Main()
         {
             /// inicializmaos la hashTtableS
@@ -26,9 +30,12 @@ namespace Program
             studentsTable.Add(Student5.ID, Student5);
 
             /// este codigo sirve para buscar a un estudiante en especifico
-            Grado_11 storeStudents1 = (Grado_11)studentsTable[Student1.ID];
+            ///Grado_11 storeStudents1 = (Grado_11)studentsTable[Student1.ID];
 
-            Console.WriteLine(storeStudents1.ID + " " + storeStudents1.Name);
+
+            Console.WriteLine("ingrese unas de las siguientes opciones\n" + "1. si quiere buscar a un estudiante es especifico\n" + "2.si quieres observar a todo los estudiantes\n" + "3.si quieres editar la nota de algun estudiante");
+
+
 
         }
     }
