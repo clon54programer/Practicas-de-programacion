@@ -17,7 +17,10 @@ namespace Program
             Grado_11 Student4 = new Grado_11(4, "juanjo");
             Grado_11 Student5 = new Grado_11(5, "agustin");
 
-            Console.WriteLine("hello world");
+            Grado_11 storeStudents1 = (Grado_11)studentsTable[Student1];
+
+            Console.WriteLine($"{storeStudents1.ID} " + storeStudents1.Name);
+
         }
     }
 
