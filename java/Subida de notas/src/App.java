@@ -37,6 +37,8 @@ public class App {
 
         // varibles de interacion
         String accion_del_Usuario;// esta variable guardara la acciones del usuario
+        int posicion = 0;
+        double nuevanota = 0.0;
 
         System.out.println(
                 "bienvenido profesor\n si quiere ver las notas escriba ver o si quiere actualizar las notas de sus estudiantes escriba actualizar");
@@ -45,16 +47,28 @@ public class App {
             accion_del_Usuario = input.nextLine();
 
             User.Accion_del_Usuario(accion_del_Usuario);
-
             // rutas
 
             int moven = myObj.estudiantes.length - 1;
 
             if (accion_del_Usuario.equals(User.ver)) {
+
                 for (int i = 0; i <= moven; i++) {
+                    System.out.println("numero " + i + " nombre " + myObj.estudiantes[i] + " nota " + myObj.notas[i]);
 
                 }
             } else if (accion_del_Usuario.equals(User.actualizar)) {
+
+                for (int i = 0; i <= moven; i++) {
+                    System.out
+                            .println("numero " + i + " nombre " + myObj.estudiantes[i] + " \t nota " + myObj.notas[i]);
+                }
+                System.out.println("ingrese el numero de lista del estudiante");
+                posicion = input.nextInt();
+                System.out.println("ingrese la nueva nota");
+                nuevanota = input.nextDouble();
+
+                myObj.notas[posicion - 1] = nuevanota;
 
             }
         }

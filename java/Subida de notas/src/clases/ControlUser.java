@@ -14,12 +14,11 @@ public class ControlUser {
      */
     public void Accion_del_Usuario(String elecion) {
 
-        elecion.toLowerCase();
-        if (elecion != ver || elecion != actualizar) {
-            System.out.println("escribiste mal una letra");
-            System.exit(-1);
+        if (elecion == "ver" || elecion == "actuañizar") {
+
         } else {
             iniciar = true;
+            System.out.println("escribiste mal una letra");
         }
     }
 
