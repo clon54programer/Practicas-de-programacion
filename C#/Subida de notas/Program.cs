@@ -9,6 +9,7 @@ namespace Program
     {
         static void Main()
         {
+            /// inicializmaos la hashTtableS
             Hashtable studentsTable = new Hashtable(); // las hash Table
 
             Grado_11 Student1 = new Grado_11(1, "Guillermo");
@@ -17,14 +18,14 @@ namespace Program
             Grado_11 Student4 = new Grado_11(4, "juanjo");
             Grado_11 Student5 = new Grado_11(5, "agustin");
 
-
+            //delcamramos la tabla con sus claves y valores
             studentsTable.Add(Student1.ID, Student1);
             studentsTable.Add(Student2.ID, Student2);
             studentsTable.Add(Student3.ID, Student3);
             studentsTable.Add(Student4.ID, Student4);
             studentsTable.Add(Student5.ID, Student5);
 
-
+            /// este codigo sirve para buscar a un estudiante en especifico
             Grado_11 storeStudents1 = (Grado_11)studentsTable[Student1.ID];
 
             Console.WriteLine(storeStudents1.ID + " " + storeStudents1.Name);
