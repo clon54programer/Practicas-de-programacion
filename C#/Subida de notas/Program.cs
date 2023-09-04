@@ -70,11 +70,12 @@ namespace Program
 
         static void Show_Stundents()
         {
-            for (int i = 0; i <= 5; i++)
+            ;
+            /*foreach (Dictionary < i >  in storeStudents1)
             {
-                Grado_11 storeStudents1 = (Grado_11)studentsTable[Convert.ToInt32(i)];
+                Grado_11 storeStudents1 = (Grado_11)studentsTable[i]
                 Console.WriteLine("nombre: " + storeStudents1.Name);
-            }
+            }*/
         }
     }
 }
