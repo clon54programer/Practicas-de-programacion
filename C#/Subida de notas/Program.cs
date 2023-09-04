@@ -72,7 +72,7 @@ namespace Program
         {
             for (int i = 0; i <= 5; i++)
             {
-                Grado_11 storeStudents1 = (Grado_11)studentsTable[i];
+                Grado_11 storeStudents1 = (Grado_11)studentsTable[Convert.ToInt32(i)];
                 Console.WriteLine("nombre: " + storeStudents1.Name);
             }
         }
