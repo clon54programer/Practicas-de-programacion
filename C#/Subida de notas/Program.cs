@@ -5,7 +5,7 @@ namespace Program
 
     class SubidaDeNotas
     {
-        static void main()
+        static void Main()
         {
             Console.WriteLine("hello world");
         }

@@ -1,0 +1,14 @@
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.AssemblyInfoInputs.cache
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.AssemblyInfo.cs
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.csproj.CoreCompileInputs.cache
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\bin\Debug\net7.0\Subida de notas.exe
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\bin\Debug\net7.0\Subida de notas.deps.json
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\bin\Debug\net7.0\Subida de notas.runtimeconfig.json
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\bin\Debug\net7.0\Subida de notas.dll
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\bin\Debug\net7.0\Subida de notas.pdb
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.dll
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\refint\Subida de notas.dll
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.pdb
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\Subida de notas.genruntimeconfig.cache
+C:\Users\GILMA PÉREZ\OneDrive\Documentos\Practicas de programacion\C#\Subida de notas\obj\Debug\net7.0\ref\Subida de notas.dll
