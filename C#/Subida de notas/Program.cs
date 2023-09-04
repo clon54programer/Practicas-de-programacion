@@ -15,24 +15,8 @@ namespace Program
         static Grado_11 Student3 = new Grado_11(3, "david");
         static Grado_11 Student4 = new Grado_11(4, "juanjo");
         static Grado_11 Student5 = new Grado_11(5, "agustin");
-        /// <summary>
-        ///  este metodo se encargara de buscar todo en la clase principal
-        /// </summary>
-        static void inicio()
-        {
 
 
-            //declaramos la tabla con sus claves y valores
-            studentsTable.Add(Student1.ID, Student1);
-            studentsTable.Add(Student2.ID, Student2);
-            studentsTable.Add(Student3.ID, Student3);
-            studentsTable.Add(Student4.ID, Student4);
-            studentsTable.Add(Student5.ID, Student5);
-        }
-        static void Opciones(int opcion)
-        {
-
-        }
         static void Main()
         {
             inicio();
@@ -48,6 +32,32 @@ namespace Program
             Opciones(input);
 
 
+        }
+        /// <summary>
+        ///  este metodo se encargara de buscar todo en la clase principal
+        /// </summary>
+        static void inicio()
+        {
+            //declaramos la tabla con sus claves y valores
+            studentsTable.Add(Student1.ID, Student1);
+            studentsTable.Add(Student2.ID, Student2);
+            studentsTable.Add(Student3.ID, Student3);
+            studentsTable.Add(Student4.ID, Student4);
+            studentsTable.Add(Student5.ID, Student5);
+        }
+
+        static void Opciones(int opcion)
+        {
+            switch (opcion)
+            {
+                case 1:
+
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
         }
     }
 }
