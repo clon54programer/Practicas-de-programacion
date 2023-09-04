@@ -6,8 +6,6 @@ namespace Program
 
     class SubidaDeNotas
     {
-
-
         /// inicializmaos la hashTtableS
         static Hashtable studentsTable = new Hashtable(); // las hash Table
         static Grado_11 Student1 = new Grado_11(1, "Guillermo");
@@ -51,13 +49,22 @@ namespace Program
             switch (opcion)
             {
                 case 1:
-
+                    Console.WriteLine("ingrese el ID del estudinate");
+                    int id_student = Convert.ToInt32(Console.ReadLine());
+                    Search_Stundents(id_student);
                     break;
                 case 2:
                     break;
                 case 3:
                     break;
             }
+        }
+
+
+        static void Search_Stundents(int id)
+        {
+            Grado_11 storeStudents1 = (Grado_11)studentsTable[id];
+            Console.WriteLine("nombre: " + storeStudents1.Name);
         }
     }
 }
