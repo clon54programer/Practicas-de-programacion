@@ -1,6 +1,5 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
+using Grado11;
 
 namespace Program
 {
@@ -48,20 +47,6 @@ namespace Program
 
             Opciones(input);
 
-
-        }
-    }
-
-    class Grado_11
-    {
-        public int ID { get; set; }
-
-        public string Name { get; set; }
-
-        public Grado_11(int id, string name)
-        {
-            this.ID = id;
-            this.Name = name;
 
         }
     }
