@@ -11,20 +11,19 @@ namespace Program
 
         /// inicializmaos la hashTtableS
         static Hashtable studentsTable = new Hashtable(); // las hash Table
-
         static Grado_11 Student1 = new Grado_11(1, "Guillermo");
         static Grado_11 Student2 = new Grado_11(2, "juan");
         static Grado_11 Student3 = new Grado_11(3, "david");
         static Grado_11 Student4 = new Grado_11(4, "juanjo");
         static Grado_11 Student5 = new Grado_11(5, "agustin");
         /// <summary>
-        /// este metodo se encargara de buscar todo en la clase principal
+        ///  este metodo se encargara de buscar todo en la clase principal
         /// </summary>
         static void inicio()
         {
 
 
-            //delcamramos la tabla con sus claves y valores
+            //declaramos la tabla con sus claves y valores
             studentsTable.Add(Student1.ID, Student1);
             studentsTable.Add(Student2.ID, Student2);
             studentsTable.Add(Student3.ID, Student3);
