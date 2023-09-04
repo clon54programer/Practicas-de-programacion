@@ -54,6 +54,7 @@ namespace Program
                     Search_Stundents(id_student);
                     break;
                 case 2:
+                    Show_Stundents();
                     break;
                 case 3:
                     break;
@@ -65,6 +66,15 @@ namespace Program
         {
             Grado_11 storeStudents1 = (Grado_11)studentsTable[id];
             Console.WriteLine("nombre: " + storeStudents1.Name);
+        }
+
+        static void Show_Stundents()
+        {
+            for (int i = 0; i <= 5; i++)
+            {
+                Grado_11 storeStudents1 = (Grado_11)studentsTable[i];
+                Console.WriteLine("nombre: " + storeStudents1.Name);
+            }
         }
     }
 }
